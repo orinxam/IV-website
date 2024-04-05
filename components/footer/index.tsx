@@ -34,7 +34,7 @@ export const Footer = () => {
                   <Box as={'ul'} css={{gap: '$5', listStyle: 'none'}}>
                      <Box as={'li'}>
                         <Text span css={{color: '$accents8'}}>
-                           First Link
+                           LinkedIn
                         </Text>
                      </Box>
                      <Box as={'li'}>
@@ -228,7 +228,7 @@ export const Footer = () => {
                      }}
                   >
                      <Text span css={{color: '$accents8'}}>
-                        © Copyright 2021 Acme Inc.
+                        © Copyright 2024 Intelligent Vision GmbH.
                      </Text>
                   </Flex>
                </Flex>

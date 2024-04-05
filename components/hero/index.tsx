@@ -26,7 +26,6 @@ export const Hero = () => {
             <Box
                css={{
                   pt: '$13',
-
                   display: 'flex',
                   flexDirection: 'column',
                   gap: '$5',
@@ -34,7 +33,7 @@ export const Hero = () => {
             >
                <Box
                   css={{
-                     maxWidth: '600px',
+                     maxWidth: '480px',
                   }}
                >
                   <Text
@@ -43,24 +42,16 @@ export const Hero = () => {
                         display: 'inline',
                      }}
                   >
-                     The modern landing page{' '}
+                     The future of imaging ... {' '}
                   </Text>
                   <Text
                      h1
                      css={{
                         display: 'inline',
+                         color: '$primary',
                      }}
                   >
-                     for{' '}
-                  </Text>
-                  <Text
-                     h1
-                     css={{
-                        display: 'inline',
-                     }}
-                     color="primary"
-                  >
-                     React developers
+                     is here
                   </Text>
                </Box>
 
@@ -72,55 +63,8 @@ export const Hero = () => {
                   size={'$lg'}
                   span
                >
-                  The easiest way to build React Landing page in seconds. Save
-                  time and focus on your project.
+                  Hyperspectral images open up a new way to view the world.
                </Text>
-
-               <Flex
-                  css={{
-                     gap: '$8',
-                     pt: '$4',
-                  }}
-                  wrap={'wrap'}
-               >
-                  <Input placeholder="Enter your email address" size="lg" />
-                  <Button>Start Free Trial</Button>
-               </Flex>
-               <Flex
-                  wrap={'wrap'}
-                  css={{
-                     'gap': '$8',
-                     'py': '$7',
-                     '@sm': {
-                        py: '$4',
-                     },
-                  }}
-               >
-                  <Flex
-                     css={{
-                        color: '$accents7',
-                        alignItems: 'center',
-                     }}
-                  >
-                     <CheckIcon /> No credit card required.
-                  </Flex>
-                  <Flex
-                     css={{
-                        color: '$accents7',
-                        alignItems: 'center',
-                     }}
-                  >
-                     <CheckIcon /> 14-day free trial.
-                  </Flex>
-                  <Flex
-                     css={{
-                        color: '$accents7',
-                        alignItems: 'center',
-                     }}
-                  >
-                     <CheckIcon /> Cancel anytime.
-                  </Flex>
-               </Flex>
             </Box>
             <Box
                css={{

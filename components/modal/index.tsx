@@ -18,7 +18,7 @@ export const ModalLogin = () => {
    };
    return (
       <div>
-         <Navbar.Link onClick={handler}>Login</Navbar.Link>
+         <Navbar.Link onClick={handler}>Customer Login</Navbar.Link>
          <Modal
             closeButton
             blur
@@ -28,10 +28,11 @@ export const ModalLogin = () => {
          >
             <Modal.Header>
                <Text id="modal-title" size={18}>
-                  Welcome to
+                  Welcome to the {' '}
                   <Text b size={18}>
-                     NextUI
+                     mosAIc
                   </Text>
+                  {' '}platform
                </Text>
             </Modal.Header>
             <Modal.Body>

@@ -172,6 +172,44 @@ const ScaleIcon = ({fill, size, width = 24, height = 24, ...props}: Props) => {
    );
 };
 
+const ClockIcon = ({fill, size, width = 24, height = 24, ...props}: Props) => {
+   return (
+      <svg
+          width="24px"
+          height="24px"
+          viewBox="0 0 24 24"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          {...props}
+      >
+          <g
+              id="Iconly/Curved/Time-Square"
+              stroke={fill}
+              stroke-width="1"
+              fill="none"
+              fill-rule="evenodd"
+              stroke-linecap="round"
+              stroke-linejoin="round">
+              <g
+                  id="Time-Square"
+                  transform="translate(2.000000, 2.000000)"
+                  stroke={fill}
+                  stroke-width="1.5"
+              >
+                  <path
+                      d="M0.7501,10.0001 C0.7501,16.9371 3.0631,19.2501 10.0001,19.2501 C16.9371,19.2501 19.2501,16.9371 19.2501,10.0001 C19.2501,3.0631 16.9371,0.7501 10.0001,0.7501 C3.0631,0.7501 0.7501,3.0631 0.7501,10.0001 Z" id="Stroke-1"
+                  ></path>
+                  <polyline
+                      id="Stroke-3"
+                      points="13.3902 12.0181 9.9992 9.9951 9.9992 5.6341"
+                  ></polyline>
+              </g>
+          </g>
+      </svg>
+   );
+};
+
+
 export const icons = {
    chevron: <ChevronDownIcon fill="currentColor" size={16} />,
    scale: <ScaleIcon fill="var(--nextui-colors-warning)" size={30} />,
@@ -179,4 +217,5 @@ export const icons = {
    flash: <FlashIcon fill="var(--nextui-colors-primary)" size={30} />,
    server: <ServerIcon fill="var(--nextui-colors-success)" size={30} />,
    user: <TagUserIcon fill="var(--nextui-colors-error)" size={30} />,
+   clock: <ClockIcon fill="var(--nextui-colors-error)" size={30} />,
 };

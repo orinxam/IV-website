@@ -32,7 +32,7 @@ export const Nav = () => {
             <Navbar.Toggle aria-label="toggle navigation" showIn="xs" />
             <AcmeLogo />
             <Text b color="inherit" hideIn="xs">
-               ACME
+               Intelligent Vision
             </Text>
             <Navbar.Content
                hideIn="sm"
@@ -53,11 +53,11 @@ export const Nav = () => {
                         iconRight={icons.chevron}
                         ripple={false}
                      >
-                        Features
+                        MosaicX
                      </Dropdown.Button>
                   </Navbar.Item>
                   <Dropdown.Menu
-                     aria-label="ACME features"
+                     aria-label="IV features"
                      css={{
                         '$$dropdownMenuWidth': '340px',
                         '$$dropdownItemHeight': '70px',
@@ -75,52 +75,49 @@ export const Nav = () => {
                      }}
                   >
                      <Dropdown.Item
-                        key="autoscaling"
+                        key="fast"
                         showFullDescription
-                        description="ACME scales apps to meet user demand, automagically, based on load."
-                        icon={icons.scale}
-                     >
-                        Autoscaling
-                     </Dropdown.Item>
-                     <Dropdown.Item
-                        key="usage_metrics"
-                        showFullDescription
-                        description="Real-time metrics to debug issues. Slow query added? We’ll show you exactly where."
-                        icon={icons.activity}
-                     >
-                        Usage Metrics
-                     </Dropdown.Item>
-                     <Dropdown.Item
-                        key="production_ready"
-                        showFullDescription
-                        description="ACME runs on ACME, join us and others serving requests at web scale."
+                        description="MosaicX takes images in miliseconds."
                         icon={icons.flash}
                      >
-                        Production Ready
+                        Fast
                      </Dropdown.Item>
                      <Dropdown.Item
-                        key="99_uptime"
+                        key="reliable"
                         showFullDescription
-                        description="Applications stay on the grid with high availability and high uptime guarantees."
+                        description="Our state-of-the-art AI platform reconstructs spectra at incredibel accuracy."
+                        icon={icons.activity}
+                     >
+                        Reliable
+                     </Dropdown.Item>
+                     <Dropdown.Item
+                        key="cheap"
+                        showFullDescription
+                        description="MosaicX costs a fraction of a conventional HS camera."
+                        icon={icons.flash}
+                     >
+                        Cheap
+                     </Dropdown.Item>
+                     <Dropdown.Item
+                        key="Diverse"
+                        showFullDescription
+                        description="Application areas are broad and integration is robust."
                         icon={icons.server}
                      >
                         +99% Uptime
                      </Dropdown.Item>
                      <Dropdown.Item
-                        key="supreme_support"
+                        key="applicable"
                         showFullDescription
-                        description="Overcome any challenge with a supporting team ready to respond."
+                        description="Implementable in various camera-making procedures such as CMOS."
                         icon={icons.user}
                      >
-                        +Supreme Support
+                        Applicable
                      </Dropdown.Item>
                   </Dropdown.Menu>
                </Dropdown>
-               <Navbar.Link isActive href="#">
-                  Customers
-               </Navbar.Link>
-               <Navbar.Link href="#">Pricing</Navbar.Link>
-               <Navbar.Link href="#">Company</Navbar.Link>
+               <Navbar.Link href="/../about-us">About Us</Navbar.Link>
+               <Navbar.Link href="/../faq">FAQ</Navbar.Link>
             </Navbar.Content>
          </Navbar.Brand>
 
@@ -160,13 +157,14 @@ export const Nav = () => {
             </Navbar.CollapseItem>
          </Navbar.Collapse>
          <Navbar.Content>
-            <ModalLogin />
-
             <Navbar.Item>
                <Button auto flat href="#">
-                  Start free trial
+                  Contact us
                </Button>
             </Navbar.Item>
+
+            <ModalLogin />
+
             <Navbar.Item hideIn={'xs'}>
                <Link
                   color="inherit"

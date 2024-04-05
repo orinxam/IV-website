@@ -1,13 +1,15 @@
 import {Button, Divider, Text} from '@nextui-org/react';
 import React from 'react';
-import {BoxIcon} from '../icons/BoxIcon';
-import {Box} from '../styles/box';
-import {Flex} from '../styles/flex';
+import {BoxIcon} from '../components/icons/BoxIcon';
+import {Box} from '../components/styles/box';
+import {Flex} from '../components/styles/flex';
+import Home from "./index";
 
-export const Faq = () => {
+export const FAQ = () => {
    return (
       <>
          <Flex
+            id="faq"
             css={{
                py: '$20',
                gap: '$18',
@@ -192,3 +194,5 @@ export const Faq = () => {
       </>
    );
 };
+
+export default FAQ;
