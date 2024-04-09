@@ -1,5 +1,5 @@
 import {Box} from '../styles/box';
-
+import {Nav} from './navbar';
 interface LayoutProps {
    children: React.ReactNode;
 }
@@ -11,6 +11,7 @@ export const Layout = ({children}: LayoutProps) => (
          background: '$background',
       }}
    >
+      <Nav />
       {children}
    </Box>
 );

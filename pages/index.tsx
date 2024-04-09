@@ -11,26 +11,26 @@ import {Features2} from '../components/features2';
 import {Features3} from '../components/features3';
 import {Testimonials} from '../components/tesminonials';
 import {Statistics} from '../components/statistics';
-import {Plans} from '../components/plans';
-import {Trial} from '../components/trial';
+import {Newsletter} from '../components/newsletter';
 import {Footer} from '../components/footer';
+import {ContactUs} from "../components/contact";
 
 const Home: NextPage = () => {
    return (
       <Layout>
-         <Nav />
+         {/*<Nav />*/}
          <Box as="main">
             <Hero />
             <Guesser />
             <Comparison />
-            <Trusted />
-            <Features1 />
-            <Features2 />
-            <Features3 />
-            <Testimonials />
-            <Statistics />
-            <Plans />
-            <Trial />
+            {/*<Trusted />*/}
+            {/*<Features1 />*/}
+            {/*<Features2 />*/}
+            {/*<Features3 />*/}
+            {/*<Testimonials />*/}
+            {/*<Statistics />*/}
+            <ContactUs />
+            <Newsletter />
             <Footer />
          </Box>
       </Layout>

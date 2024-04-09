@@ -30,10 +30,12 @@ export const Nav = () => {
       >
          <Navbar.Brand>
             <Navbar.Toggle aria-label="toggle navigation" showIn="xs" />
-            <AcmeLogo />
-            <Text b color="inherit" hideIn="xs">
-               Intelligent Vision
-            </Text>
+              <Link href="/">
+                  <AcmeLogo />
+                  <Text b color="inherit" hideIn="xs">
+                    Intelligent Vision
+                  </Text>
+              </Link>
             <Navbar.Content
                hideIn="sm"
                css={{
@@ -116,6 +118,7 @@ export const Nav = () => {
                      </Dropdown.Item>
                   </Dropdown.Menu>
                </Dropdown>
+               <Navbar.Link href="#">Applications</Navbar.Link>
                <Navbar.Link href="/../about-us">About Us</Navbar.Link>
                <Navbar.Link href="/../faq">FAQ</Navbar.Link>
             </Navbar.Content>

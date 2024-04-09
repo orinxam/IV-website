@@ -2,7 +2,7 @@ import {Button, Divider, Input, Text} from '@nextui-org/react';
 import React from 'react';
 import {Flex} from '../styles/flex';
 
-export const Trial = () => {
+export const Newsletter = () => {
    return (
       <>
          <Flex

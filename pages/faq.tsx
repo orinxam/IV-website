@@ -4,10 +4,11 @@ import {BoxIcon} from '../components/icons/BoxIcon';
 import {Box} from '../components/styles/box';
 import {Flex} from '../components/styles/flex';
 import Home from "./index";
+import {Layout} from "../components/navbar/layout";
 
 export const FAQ = () => {
    return (
-      <>
+      <Layout>
          <Flex
             id="faq"
             css={{
@@ -21,7 +22,7 @@ export const FAQ = () => {
                <Text span css={{color: '$blue600'}}>
                   FAQ
                </Text>
-               <Text h2>You Have Questions?</Text>
+               <Text h2>Is this some kind of magic?</Text>
                <Text
                   span
                   css={{
@@ -30,9 +31,8 @@ export const FAQ = () => {
                      textAlign: 'center',
                   }}
                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  condimentum, nisl ut aliquam lacinia, nisl nisl aliquet
-                  aliquet
+                  Of course not! Here we explain some of the common concepts and
+                  frequent questions in the hyperspectral imaging (HSI) field.
                </Text>
             </Flex>
 
@@ -49,8 +49,7 @@ export const FAQ = () => {
                   <BoxIcon />
                   <Flex direction={'column'} css={{gap: '$3'}}>
                      <Text h3>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit?
+                        What is 'the spectrum'?
                      </Text>
                      <Text
                         span
@@ -58,15 +57,20 @@ export const FAQ = () => {
                            color: '$accents8',
                         }}
                      >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed condimentum, nisl ut aliquam lacinia, nisl nisl
-                        aliquet aliquet Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Sed condimentum, nisl ut aliquam
-                        lacinia, nisl nisl aliquet aliquet Lorem ipsum dolor sit
-                        amet, consectetur adipiscing elit. Sed condimentum, nisl
-                        ut aliquam lacinia, nisl nisl aliquet aliquet Lorem
-                        ipsum dolor sit amet, aliquam lacinia, nisl nisl aliquet
-                        aliquet
+                        Light is a wave - by measuring the intensity of specific wavelength components
+                        (red: 630nm (nanometers), green: 532nm and blue: 465nm), our eye approximates the true colour
+                        of objects by mixing the intensities of these three colours. However, true colours
+                        are far more complex and every wavelength (between roughly 380-700nm) contributes to the overall
+                        colour.
+                     </Text>
+                  </Flex>
+               </Flex>
+
+               <Flex css={{gap: '$5'}} justify={'center'}>
+                  <BoxIcon />
+                  <Flex direction={'column'} css={{gap: '$3'}}>
+                     <Text h3>
+                        And what can a hyperspectral camera do with this?
                      </Text>
                      <Text
                         span
@@ -74,12 +78,31 @@ export const FAQ = () => {
                            color: '$accents8',
                         }}
                      >
-                        elit. Sed condimentum, nisl ut aliquam lacinia, nisl
-                        nisl aliquet aliquet elit. Sed condimentum, nisl ut
-                        aliquam lacinia, nisl nisl aliquet aliquet elit. Sed
-                        condimentum, nisl ut aliquam lacinia, nisl nisl aliquet
-                        aliquet elit. Sed condimentum, nisl ut aliquam lacinia,
-                        nisl nisl aliquet aliquet
+                        A normal RGB camera (just like our eyes) extracts intensities at the wavelengths for
+                        red, green and blue. HSI cameras are able to extract the intensity at a greater number
+                        of intensities, think for example also at the wavelengths corresponding to magenta, burgundy,
+                        yellow, dark green and cyan. By adding these wavelength components to the true colour, a more
+                        refined representation of the true object, manifesting in its material composition, becomes apparent.
+                     </Text>
+                     <img src="light_spectrum.jpeg" />
+                  </Flex>
+               </Flex>
+
+               <Flex css={{gap: '$5'}} justify={'center'}>
+                  <BoxIcon />
+                  <Flex direction={'column'} css={{gap: '$3'}}>
+                     <Text h3>
+                        Why do we need hyperspectral images?
+                     </Text>
+                     <Text
+                        span
+                        css={{
+                           color: '$accents8',
+                        }}
+                     >
+                        Hyperspectral images are useful whenever we want to distinguish between different materials
+                        that look the same to the naked eye. Examples may include spoilt food, identifying differences
+                        between identical-looking drug pills, counterfeit products or spotting camouflaged animals.
                      </Text>
                   </Flex>
                </Flex>
@@ -90,85 +113,6 @@ export const FAQ = () => {
                      <Text h3>
                         Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit?
-                     </Text>
-                     <Text
-                        span
-                        css={{
-                           color: '$accents8',
-                        }}
-                     >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed condimentum, nisl ut aliquam lacinia, nisl nisl
-                        aliquet aliquet Lorem ipsum dolor sit amet, consectetur
-                        adipiscing adipiscing elit. Sed condimentum, nisl ut
-                        aliquam lacinia, nisl nisl aliquet aliquet Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit. Sed
-                        condimentum, nisl ut aliquam lacinia, nisl nisl aliquet
-                        aliquet
-                     </Text>
-                     <Text
-                        span
-                        css={{
-                           color: '$accents8',
-                        }}
-                     >
-                        elit. Sed condimentum, nisl ut aliquam lacinia, nisl
-                        nisl aliquet aliquet elit. Sed condimentum, nisl ut
-                        aliquam lacinia, nisl nisl aliquet aliquet elit. Sed
-                        condimentum, aliquet
-                     </Text>
-                  </Flex>
-               </Flex>
-
-               <Flex css={{gap: '$5'}} justify={'center'}>
-                  <BoxIcon />
-                  <Flex direction={'column'} css={{gap: '$3'}}>
-                     <Text h3>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit?
-                     </Text>
-                     <Text
-                        span
-                        css={{
-                           color: '$accents8',
-                        }}
-                     >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed condimentum, nisl ut aliquam lacinia, nisl nisl
-                        aliquet
-                     </Text>
-                     <Text
-                        span
-                        css={{
-                           color: '$accents8',
-                        }}
-                     >
-                        elit. Sed condimentum, nisl ut aliquam lacinia, nisl
-                        nisl aliquet aliquet elit. Sed condimentum, nisl ut
-                        aliquam lacinia, nisl nisl aliquet aliquet elit. Sed
-                        condimentum, Sed condimentum, nisl ut aliquam lacinia,
-                        nisl nisl aliquet aliquet
-                     </Text>
-                  </Flex>
-               </Flex>
-
-               <Flex css={{gap: '$5'}} justify={'center'}>
-                  <BoxIcon />
-                  <Flex direction={'column'} css={{gap: '$3'}}>
-                     <Text h3>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit?
-                     </Text>
-                     <Text
-                        span
-                        css={{
-                           color: '$accents8',
-                        }}
-                     >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed condimentum, nisl ut aliquam lacinia, nisl nisl
-                        aliquet aliquet Lorem ipsum dolor sit amet, consectetur
-                        adipiscing
                      </Text>
                      <Text
                         span
@@ -191,7 +135,7 @@ export const FAQ = () => {
          <Divider
             css={{position: 'absolute', inset: '0p', left: '0', mt: '$5'}}
          />
-      </>
+      </Layout>
    );
 };
 
