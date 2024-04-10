@@ -30,7 +30,7 @@ const AboutUs = () => {
   // @ts-ignore
     return (
   <Layout>
-      <Text h2 css={{ textAlign: 'center', marginTop: '50px' }}>
+      <Text h2 css={{ textAlign: 'center', marginTop: '100px' }}>
         Leadership Team
       </Text>
 

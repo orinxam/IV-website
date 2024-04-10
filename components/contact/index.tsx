@@ -6,7 +6,7 @@ import { Flex } from '../styles/flex';
 
 export const ContactUs = () => {
   return (
-    <>
+    <div id="contact-us">
       <Flex
         css={{ py: '$20', gap: '1rem', px: '$6' }}
         justify={'center'}
@@ -37,18 +37,11 @@ export const ContactUs = () => {
                 <Textarea placeholder="Your message to us" rows={5} size="lg" />
 
             <Button css={{ width: '100px' }}>Submit </Button>
-
-
-
-
-
-
         </Flex>
       </Flex>
-
       <Divider
         css={{ position: 'absolute', inset: '0p', left: '0', mt: '$5' }}
       />
-    </>
+    </div>
   );
 };

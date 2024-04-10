@@ -1,11 +1,11 @@
 import {Button, Dropdown, Link, Navbar, Switch, Text} from '@nextui-org/react';
-import React from 'react';
+import React, from 'react';
 import {ModalLogin} from '../modal';
 import {icons} from './icons';
 import {AcmeLogo} from './logo';
 import {useTheme as useNextTheme} from 'next-themes';
 import {useTheme} from '@nextui-org/react';
-import {GithubIcon} from '../icons/GithubIcon';
+
 
 export const Nav = () => {
    const {setTheme} = useNextTheme();
@@ -25,6 +25,9 @@ export const Nav = () => {
             '& .nextui-navbar-container': {
                background: '$background',
                borderBottom: 'none',
+               position: 'fixed',
+               top: '0px',
+               zIndex: 999,
             },
          }}
       >
@@ -139,18 +142,6 @@ export const Nav = () => {
                </Navbar.CollapseItem>
             ))}
             <Navbar.CollapseItem>
-               <Link
-                  color="inherit"
-                  css={{
-                     minWidth: '100%',
-                  }}
-                  target="_blank"
-                  href="https://github.com/Siumauricio/landing-template-nextui"
-               >
-                  <GithubIcon />
-               </Link>
-            </Navbar.CollapseItem>
-            <Navbar.CollapseItem>
                <Switch
                   checked={isDark}
                   onChange={(e) =>
@@ -160,26 +151,14 @@ export const Nav = () => {
             </Navbar.CollapseItem>
          </Navbar.Collapse>
          <Navbar.Content>
-            <Navbar.Item>
-               <Button auto flat href="#">
+            <Navbar.Link href="#contact-us">
+               <Button auto flat >
                   Contact us
                </Button>
-            </Navbar.Item>
+            </Navbar.Link>
 
             <ModalLogin />
 
-            <Navbar.Item hideIn={'xs'}>
-               <Link
-                  color="inherit"
-                  css={{
-                     minWidth: '100%',
-                  }}
-                  target="_blank"
-                  href="https://github.com/Siumauricio/landing-template-nextui"
-               >
-                  <GithubIcon />
-               </Link>
-            </Navbar.Item>
             <Navbar.Item hideIn={'xs'}>
                <Switch
                   checked={isDark}

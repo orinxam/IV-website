@@ -3,6 +3,7 @@ import {Nav} from '../components/navbar/navbar';
 import {Layout} from '../components/navbar/layout';
 import {Hero} from '../components/hero';
 import {Comparison} from '../components/comparison'
+import {ImageSlider} from '../components/imageslider'
 import {Guesser} from '../components/guesser';
 import {Trusted} from '../components/trusted';
 import {Box} from '../components/styles/box';
@@ -14,6 +15,7 @@ import {Statistics} from '../components/statistics';
 import {Newsletter} from '../components/newsletter';
 import {Footer} from '../components/footer';
 import {ContactUs} from "../components/contact";
+import {Overlay} from "../components/overlay";
 
 const Home: NextPage = () => {
    return (
@@ -23,6 +25,8 @@ const Home: NextPage = () => {
             <Hero />
             <Guesser />
             <Comparison />
+            <ImageSlider />
+            <Overlay />
             {/*<Trusted />*/}
             {/*<Features1 />*/}
             {/*<Features2 />*/}
