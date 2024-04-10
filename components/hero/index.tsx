@@ -8,7 +8,7 @@ export const Hero = () => {
    const [textColor, setTextColor] = useState('red');
    return (
       <>
-         <Flex style={{ position: 'relative', height: '750px'}}>
+         <Flex style={{ position: 'relative', width: '1500px', height: '950px'}}>
             <video
                width="100%"
                height="100%"
@@ -17,7 +17,7 @@ export const Hero = () => {
                loop
                style={{ position: 'absolute', zIndex: 0 }}
             >
-               <source src="/cols_vid.mp4" type="video/mp4" />
+               <source src="/cols_vid_cropped.mp4" type="video/mp4" />
                Your browser does not support the video tag.
             </video>
             <Flex
