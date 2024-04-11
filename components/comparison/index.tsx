@@ -9,7 +9,7 @@ export const Comparison = () => {
             direction={'column'}
             align={'center'}
             css={{
-                'pt': '$20',
+                'pt': '40px',
                 'px': '$6',
                 'pb': '$6',
                 '@md': {

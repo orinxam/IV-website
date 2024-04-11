@@ -1,5 +1,5 @@
 import {Button, Dropdown, Link, Navbar, Switch, Text} from '@nextui-org/react';
-import React, from 'react';
+import React from 'react';
 import {ModalLogin} from '../modal';
 import {icons} from './icons';
 import {AcmeLogo} from './logo';
@@ -121,7 +121,7 @@ export const Nav = () => {
                      </Dropdown.Item>
                   </Dropdown.Menu>
                </Dropdown>
-               <Navbar.Link href="#">Applications</Navbar.Link>
+               <Navbar.Link href="/../applications">Applications</Navbar.Link>
                <Navbar.Link href="/../about-us">About Us</Navbar.Link>
                <Navbar.Link href="/../faq">FAQ</Navbar.Link>
             </Navbar.Content>

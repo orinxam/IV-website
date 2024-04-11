@@ -12,7 +12,10 @@ export const Overlay = () => {
   return (
       <>
         <Text h2 css={{ textAlign: 'center', marginTop: '60px' }}>
-          Can you spot the X?
+          Can you spot the hare?
+        </Text>
+        <Text css={{ color: '$accents8', textAlign: 'center' }} weight="normal" size="lg">
+        Hover over the image to highlight it.
         </Text>
       <Flex
             css={{
@@ -35,9 +38,9 @@ export const Overlay = () => {
               onMouseLeave={onMouseLeave}
           >
         {isHovering ? (
-          <Image src="/mock.png" width={500} height={300} alt="logo" />
+          <Image src="/hidden_hare_revealed.jpeg" width={800} height={500} alt="logo" />
         ) : (
-          <Image src="/prism.jpeg" width={500} height={300} alt="logo" />
+          <Image src="/hidden_hare.jpeg" width={800} height={500} alt="logo" />
         )}
       </Box>
       <Divider css={{ position: 'relative', inset: '0p', left: '0', mt: '$10' }} />

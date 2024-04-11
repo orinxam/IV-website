@@ -8,17 +8,33 @@ export const Hero = () => {
    const [textColor, setTextColor] = useState('red');
    return (
       <>
-         <Flex style={{ position: 'relative', width: '1500px', height: '950px'}}>
+         <Flex style={{
+             position: 'relative',
+             width: '1500px',
+             height: '830px',
+         }}>
             <video
                width="100%"
                height="100%"
                autoPlay
                muted
                loop
-               style={{ position: 'absolute', zIndex: 0 }}
+               style={{
+                   position: 'absolute',
+                   zIndex: 0,
+            }}
             >
                <source src="/cols_vid_cropped.mp4" type="video/mp4" />
-               Your browser does not support the video tag.
+                   <div
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        backgroundImage: 'url("/fallback_image.jpg")',
+                        backgroundSize: 'cover',
+                      }}
+                    >
+               Oops! Your browser doesn't want to this the video.
+                   </div>
             </video>
             <Flex
                css={{
@@ -43,7 +59,7 @@ export const Hero = () => {
                   textAlign: 'center',
                   justifyContent: 'center',
                   gap: '50px',
-                  pt: '440px',
+                  pt: '410px',
                }}
             >
                <Box
@@ -90,7 +106,7 @@ export const Hero = () => {
                         50,
                         () => setTextColor('$primary'),
                         'is here',
-                        1675,
+                        1685,
                         () => setTextColor('purple'),
                         'is now',
                         1750,
@@ -105,9 +121,10 @@ export const Hero = () => {
 
                <Text
                   css={{
-                     pt: '100px',
+                     pt: '120px',
                      color: '$accents8',
                      maxWidth: '400px',
+                     pb: '-1000px',
                   }}
                   size={'$lg'}
                   span
@@ -118,7 +135,7 @@ export const Hero = () => {
          </Flex>
          </Flex>
          <Divider
-            css={{position: 'absolute', inset: '0p', left: '0', mt: '$10'}}
+            css={{position: 'relative', inset: '-80px', left: '0', mt: '$10'}}
          />
       </>
    );

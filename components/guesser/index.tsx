@@ -58,7 +58,7 @@ const handleNextClick = () => {
 
   return (
     <>
-      <Text h2 css={{ textAlign: 'center', marginTop: '50px' }}>
+      <Text h2 css={{ textAlign: 'center', marginTop: '-60px' }}>
         Which image is the real one?
       </Text>
       <Text css={{ color: '$accents8', textAlign: 'center' }} weight="normal" size="lg">
