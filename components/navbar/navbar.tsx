@@ -1,11 +1,11 @@
 import {Button, Dropdown, Link, Navbar, Switch, Text} from '@nextui-org/react';
-import React from 'react';
+import React, {useState} from 'react';
 import {ModalLogin} from '../modal';
 import {icons} from './icons';
-import {AcmeLogo} from './logo';
 import {useTheme as useNextTheme} from 'next-themes';
 import {useTheme} from '@nextui-org/react';
-
+import {Box} from "../styles/box";
+import Image from "next/image";
 
 export const Nav = () => {
    const {setTheme} = useNextTheme();
@@ -17,6 +17,10 @@ export const Nav = () => {
       'Company',
       'Legal',
    ];
+   const [isHovering, setIsHovered] = useState(false);
+   const onMouseEnter = () => setIsHovered(true);
+   const onMouseLeave = () => setIsHovered(false);
+
    return (
       <Navbar
          isBordered
@@ -34,8 +38,17 @@ export const Nav = () => {
          <Navbar.Brand>
             <Navbar.Toggle aria-label="toggle navigation" showIn="xs" />
               <Link href="/">
-                  <AcmeLogo />
-                  <Text b color="inherit" hideIn="xs">
+                          <Box
+                                onMouseEnter={onMouseEnter}
+                                onMouseLeave={onMouseLeave}
+                            >
+                          {isHovering ? (
+                            <Image src="/logo_text.png" width={35} height={35} alt="logo" />
+                          ) : (
+                            <Image src="/logo_notext.png" width={35} height={35} alt="logo" />
+                          )}
+                          </Box>
+                  <Text b color="inherit" hideIn="xs" style={{ marginLeft: '10px' }}>
                     Intelligent Vision
                   </Text>
               </Link>
